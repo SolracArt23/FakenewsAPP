@@ -234,7 +234,7 @@ WSGI_APPLICATION = 'FakenewsApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'mydatabase',
+        'NAME': 'fake_news_',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': 'mongodb',
