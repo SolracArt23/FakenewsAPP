@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Agregar los estilos de Bokeh -->
+    <link href="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.1.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.1.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Dashboard de Métricas</h1>
+
+    <h2>Noticias más Vistas</h2>
+    <!-- Aquí se inserta la gráfica de las noticias más vistas -->
+    {{ noticias_mas_vistas_html|safe }}
+
+    <h2>Categorías más Solicitadas</h2>
+    <!-- Aquí se inserta la gráfica de las categorías más solicitadas -->
+    {{ categorias_mas_solicitadas_html|safe }}
+
+    <!-- Agregar los scripts de Bokeh -->
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.1.min.js"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.1.min.js"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.1.min.js"></script>
+    <!-- Agregar los recursos necesarios de Bokeh -->
+    {{ bokeh.resources.CDN.render_js|safe }}
+</body>
+</html>

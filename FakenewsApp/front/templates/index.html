@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'img/logo.ico'%}"/>
+    <link href="{% static 'css/news.css'%}" rel="stylesheet"/>
+
+    <link href="{% static 'css/styles.css'%}" rel="stylesheet"/>
+    <script src="{% static 'js/get_news.js' %}"></script>
+    <script src="{% static 'js/categorias.js' %}"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <title>NewAwesoem</title>
+</head>
+<body>
+    <section class="photo" id="inicio">
+  
+
+      {% include 'plantillas/header.html'%}
+        <div class="photo-text">
+        <h4 data-ix="skype">Real news</h4>
+        <p data-ix="subtitle-hero-up">Pagina dedicada a la creacion de noticias de verdad mediante el uso de IA</p>
+          </div>
+        <div class="overlay"></div>
+      </section>
+
+      <section class="content">
+
+        <div class="grand-title" id="servicio">
+          <h4 data-ix="slowfade-scroll-bigs">Noticias de ultima hora </h4>
+        </div>
+        <div id="container_card">
+          <script>Obtener_noticias(3)</script>
+        </div>
+        
+        <br>
+        <section class="portafolio" id="trabajo">
+          <h4 data-ix="slowfade-scroll-bigs">Categorias de noticias</h4>
+          <div id="imagen-container">
+
+          </div>
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators" id="botones_carousel">
+            </div>
+            <div id="carousel-container">
+             
+              <script> Obtener_categorias("")</script>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+      </section>
+
+      <div class="footer" id="contacto">
+        <h4 data-ix="slowfade-scroll-bigs">Contacto</h4>
+        <div class="container">
+        <form action="enviar.php" method="post">
+          <ul class="flex-outer">
+            <li>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" placeholder="Ingresa Nombre" class="rect" required>
+            </li>
+            <li>
+              <label for="correo">Correo</label>
+              <input type="email" name="correo" placeholder="Ingresa Correo" class="rect" required>
+            </li>
+            <li>
+              <label for="fono">Teléfono</label>
+              <input type="text" name="telefono" placeholder="Ingresa Teléfono" class="rect" required>
+            </li>
+            <li>
+              <label for="mensaje">Mensaje</label>
+              <textarea rows="6" name="mensaje" class="rect" required></textarea>
+            </li>
+            <li class="center">
+              <button type="submit">Enviar</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+      </div>
+      
+      {% load static %}      
+
+     
+</body>
+</html>
