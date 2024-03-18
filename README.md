@@ -9,6 +9,7 @@ docker run --name my-mongodb \
   -d \
   mongo
 ```
+**Nota:** puedes correr la aplicacion en docker siguiendo estos pasos [click aqui](https://hub.docker.com/r/ccorredor21/djangoapp)
 
 Una vez que tengas el servidor MongoDB en funcionamiento, puedes iniciar la aplicación con el siguiente comando:
 
