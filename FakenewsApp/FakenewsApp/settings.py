@@ -220,28 +220,18 @@ WSGI_APPLICATION = 'FakenewsApp.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'djongo',
+ DATABASES = {
+     'default': {
+         'ENGINE': 'djongo',
 
-#         'NAME':'fake_news_',
-#         'CLIENT': {
-#             'host': '127.0.0.1',  
-#             'port': 27017,        
-#         }
-#     }
-# }
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'fake_news_',
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-            'host': 'mongodb',
-            'port': 27017,
-        }
-    }
-}
+         'NAME':'fake_news_',
+         'CLIENT': {
+             'host': '127.0.0.1',  
+             'port': 27017,        
+         }
+     }
+ }
+
 
 
 
