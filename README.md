@@ -1,24 +1,33 @@
-# Como correr la aplicacion
-Para correr la aplciacion necesitas tener un servidor mongDB con el host de nombre fake_news, para ello puedes utilizar docker  con el comando 
-```
+# Cómo correr la aplicación
+
+Para ejecutar la aplicación, primero necesitas tener un servidor MongoDB con el host de nombre `fake_news`. Puedes lograr esto utilizando Docker con el siguiente comando:
+
+```bash
 docker run --name my-mongodb \
   -e MONGO_INITDB_HOST=fake_news \
   -p 27017:27017 \
   -d \
   mongo
-
 ```
-posterior a ello puedes ejecutar la apliacacion con el comando  **python Fakenews/manage.py runserver** el cual correra el servidor en el puerto _8000_, ahora lo unico que te faltaria es crear la migracion y correr los datos de prueba
 
-````
+Una vez que tengas el servidor MongoDB en funcionamiento, puedes iniciar la aplicación con el siguiente comando:
 
+```bash
+python Fakenews/manage.py runserver
+```
+
+Este comando iniciará el servidor en el puerto `8000`.
+
+Finalmente, para preparar la base de datos y cargar los datos de prueba, ejecuta los siguientes comandos:
+
+```bash
 python FakenewsApp/manage.py migrate
 python FakenewsApp/manage.py loaddata FakenewsApp/fixtures/superuser.json
 python FakenewsApp/manage.py loaddata FakenewsApp/fixtures/Categoria.json
 python FakenewsApp/manage.py loaddata FakenewsApp/fixtures/Noticia.json
+```
 
-
-````
+Con estos pasos, habrás configurado y ejecutado la aplicación correctamente.
 y con ello ya tendrias todo listo
 
 
