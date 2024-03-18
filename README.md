@@ -36,6 +36,8 @@ y con ello ya tendrias todo listo
 ## Descripción
 La API **Chating_with_chatgpt** permite comunicarse con un modelo de lenguaje natural llamado ChatGPT. Esto permite a los usuarios enviar mensajes y recibir respuestas generadas por el modelo.
 
+**_Nota_:** *para que funcione la api primero debes desde el administrador agregar a la tabla de credenciales la key que te proporcina chatgpt porterior a ello colocar como nombre **Chatgpt** para que asi te funcione*
+
 ## URL Base
 ```
 http://example.com/api/chating_with_chatgpt/
