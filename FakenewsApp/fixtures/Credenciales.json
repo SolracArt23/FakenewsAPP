@@ -1,0 +1,11 @@
+[
+    {
+        "model": "Data_base.Credenciale",
+        "pk": 1,
+        "fields": {
+            "id_credencial": 1,
+            "key": "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",
+            "nombre": "Chatgpt"
+        }
+    }
+]
