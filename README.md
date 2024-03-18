@@ -1,4 +1,25 @@
+# Como correr la aplicacion
+Para correr la aplciacion necesitas tener un servidor mongDB con el host de nombre fake_news, para ello puedes utilizar docker  con el comando 
+```
+docker run --name my-mongodb \
+  -e MONGO_INITDB_HOST=fake_news \
+  -p 27017:27017 \
+  -d \
+  mongo
 
+```
+posterior a ello puedes ejecutar la apliacacion con el comando  **python Fakenews/manage.py runserver** el cual correra el servidor en el puerto _8000_, ahora lo unico que te faltaria es crear la migracion y correr los datos de prueba
+
+````
+
+python FakenewsApp/manage.py migrate
+python FakenewsApp/manage.py loaddata FakenewsApp/fixtures/superuser.json
+python FakenewsApp/manage.py loaddata FakenewsApp/fixtures/Categoria.json
+python FakenewsApp/manage.py loaddata FakenewsApp/fixtures/Noticia.json
+
+
+````
+y con ello ya tendrias todo listo
 
 
 # funcionalidad 1: Documentación de la API - Chating_with_chatgpt
