@@ -15,7 +15,7 @@ function Crear_usuarios()
     if (this.readyState == 4 && this.status == 200) {
         // La solicitud se completó y el estado es OK (200)
         // Mostrar el contenido de la respuesta en un alert
-        alert(this.responseText);
+        alert("datos creados");
     }
   };
 

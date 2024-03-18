@@ -19,7 +19,7 @@ class CategoriaRegister(admin.ModelAdmin):
 
 @admin.register(Credenciale)
 class CredencialREgister(admin.ModelAdmin):
-    list_display=('id_credencial','key')
+    list_display=('id_credencial','key','nombre')
 
 @admin.register(Noticia)
 class NoticiaAdmin(admin.ModelAdmin):

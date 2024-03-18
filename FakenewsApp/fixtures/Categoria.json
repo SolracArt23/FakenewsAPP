@@ -1,0 +1,23 @@
+[
+    {
+        "model": "Data_base.Categoria",
+        "pk": 1,
+        "fields": {
+            "id_grupo_noticia": 1,
+            "categoria": "Política",
+            "descripcion": "Noticias relacionadas con política",
+            "img_url": "static/img/wallpapersden.jpg"
+            
+        }
+    },
+    {
+        "model": "Data_base.Categoria",
+        "pk": 2,
+        "fields": {
+            "id_grupo_noticia": 2,
+            "categoria": "Deportes",
+            "descripcion": "Noticias deportivas",
+            "img_url": "static/img/wallpapersden.jpg"
+        }
+    }
+]

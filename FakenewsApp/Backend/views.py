@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
-from .utils import generar_grafico_noticias_mas_vistas,generar_grafico_categorias_mas_solicitadas
 
 
 

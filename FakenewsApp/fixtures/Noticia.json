@@ -1,0 +1,44 @@
+[
+    {
+        "model": "Data_base.Noticia",
+        "pk": 1,
+        "fields": {
+            "titulo": "Título de la noticia 1",
+            "titular": "Titular de la noticia 1",
+            "contenido": "Contenido de la noticia 1",
+            "id_user": 1,
+            "num_view": 10,
+            "id_categoria": 1,
+            "grupo_img_ref": "static/img/wallpapersden.jpg",
+            "fecha_creacion": "2024-03-18"
+        }
+    },
+    {
+        "model": "Data_base.Noticia",
+        "pk": 2,
+        "fields": {
+            "titulo": "Título de la noticia 2",
+            "titular": "Titular de la noticia 2",
+            "contenido": "Contenido de la noticia 2",
+            "id_user": 2,
+            "num_view": 5,
+            "id_categoria": 2,
+            "grupo_img_ref": "static/img/wallpapersden.jpg",
+            "fecha_creacion": "2024-03-19"
+        }
+    },
+    {
+        "model": "Data_base.Noticia",
+        "pk": 3,
+        "fields": {
+            "titulo": "Título de la noticia 3",
+            "titular": "Titular de la noticia 3",
+            "contenido": "Contenido de la noticia 3",
+            "id_user": 2,
+            "num_view": 5,
+            "id_categoria": 2,
+            "grupo_img_ref": "static/img/wallpapersden.jpg",
+            "fecha_creacion": "2024-03-19"
+        }
+    }
+]

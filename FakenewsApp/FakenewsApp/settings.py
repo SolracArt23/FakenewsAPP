@@ -53,7 +53,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "RealNews",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "../static/img/logo.jpg",
+    "site_logo": None,
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,
@@ -220,17 +220,30 @@ WSGI_APPLICATION = 'FakenewsApp.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+
+#         'NAME':'fake_news_',
+#         'CLIENT': {
+#             'host': '127.0.0.1',  
+#             'port': 27017,        
+#         }
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-
-        'NAME':'news_db',
+        'NAME': 'mydatabase',
+        'ENFORCE_SCHEMA': False,
         'CLIENT': {
-            'host': '127.0.0.1',  
-            'port': 27017,        
+            'host': 'mongodb',
+            'port': 27017,
         }
     }
 }
+
+
 
 # DATABASES = {
 #     'default': {
@@ -286,3 +299,7 @@ IMG_URL ='/img/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+FIXTURE_DIRS = [
+    'fixtures/',
+]

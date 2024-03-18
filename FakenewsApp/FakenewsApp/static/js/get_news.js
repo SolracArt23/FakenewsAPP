@@ -40,7 +40,7 @@ function Create_card(res)
           <div class="blog-card alt">
             <div class="meta">
             
-              <div class="photo" style="background-image: url(${nuevaUrl})"></div> 
+              <div class="photo" style="background-image: url(../${nuevaUrl})"></div> 
               <ul class="details">
                 <img src= "${element.imagen}" style="border-radius:50%;width:50px;height:50px"/>
                 <li class="author"><a href="#">${element.nombre} ${element.apellido}</a></li>
